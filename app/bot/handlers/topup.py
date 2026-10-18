@@ -54,7 +54,10 @@ async def topup_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "\n"
         "Hubungi admin jika kamu ingin mendapat akses lebih awal."
     )
-    await query.edit_message_text(msg, parse_mode="HTML")
+    if query.message and query.message.photo:
+        await query.edit_message_caption(caption=msg, parse_mode="HTML")
+    else:
+        await query.edit_message_text(msg, parse_mode="HTML")
 
 
 async def proof_handler(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
