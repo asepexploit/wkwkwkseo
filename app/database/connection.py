@@ -23,5 +23,10 @@ async def init_db():
         path = os.path.join(migrations_dir, fname)
         with open(path, "r") as f:
             sql = f.read()
-        await db.executescript(sql)
+        try:
+            await db.executescript(sql)
+        except Exception as e:
+            # Ignore "duplicate column" — kolom sudah ada dari run sebelumnya
+            if "duplicate column" not in str(e).lower():
+                raise
     await db.commit()
