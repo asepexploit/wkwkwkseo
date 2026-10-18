@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+logs/
+storage/proofs/
+storage/bot.db
+.playwright-mcp/

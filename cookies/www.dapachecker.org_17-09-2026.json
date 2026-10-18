@@ -1,0 +1,122 @@
+{
+    "url": "https://www.dapachecker.org",
+    "cookies": [
+        {
+            "domain": ".dapachecker.org",
+            "expirationDate": 1824211499.797332,
+            "hostOnly": false,
+            "httpOnly": false,
+            "name": "_ga",
+            "path": "/",
+            "sameSite": "unspecified",
+            "secure": false,
+            "session": false,
+            "storeId": "0",
+            "value": "GA1.1.1118276689.1788540406"
+        },
+        {
+            "domain": ".dapachecker.org",
+            "expirationDate": 1820076406,
+            "hostOnly": false,
+            "httpOnly": false,
+            "name": "_clck",
+            "path": "/",
+            "sameSite": "unspecified",
+            "secure": false,
+            "session": false,
+            "storeId": "0",
+            "value": "vhqoao%5E2%5Eg96%5E0%5E2438"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1821187499.669407,
+            "hostOnly": true,
+            "httpOnly": false,
+            "name": "user_key",
+            "path": "/",
+            "sameSite": "lax",
+            "secure": true,
+            "session": false,
+            "storeId": "0",
+            "value": "1788540406251ypo0r4kuur"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1789737660,
+            "hostOnly": true,
+            "httpOnly": false,
+            "name": "premium_login",
+            "path": "/",
+            "sameSite": "unspecified",
+            "secure": false,
+            "session": false,
+            "storeId": "0",
+            "value": "0"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1792243276.37747,
+            "hostOnly": true,
+            "httpOnly": true,
+            "name": "emd_user_login",
+            "path": "/",
+            "sameSite": "lax",
+            "secure": true,
+            "session": false,
+            "storeId": "0",
+            "value": "eyJpdiI6IklTdU1VTnRPZElwcllOellxTXQ1N2c9PSIsInZhbHVlIjoielBWYzVjZ2dkLzdSODd2UFBnQjVoWGQyY3psNWE5a0J5T2NxbXZPQitzQnBhMTBkRUUrY1lqVFN1MFZnTHc0ZlM0SlZZNXcyVEdMUEVIcjB4enRsZlRCRVV5dUdwWitCVGVDNWcyWk5qUUsyZmZjbjFRYXpNOWcxUGFKR3Ywcnd5bERQaGttZHJ3T3BxcytMUmNwOXJMYzltOXZmM3N1VVJvR0tpTGJPRFd0WTF2cm5heWN3OWlkQ2VyVzhmNDJvaXV2UjdrYUxmaHVPRzRQNmZTVnVoQT09IiwibWFjIjoiOTgzOTAzYmJkNWNhNjBhZjdiZmFlMTJhN2E1YWRjNTcxZDE0NGMzZmY0OTg0Y2U0N2I1MWM2YmM3MTdmNTM1NSIsInRhZyI6IiJ9"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1792243276.377497,
+            "hostOnly": true,
+            "httpOnly": true,
+            "name": "emd_user_login_key",
+            "path": "/",
+            "sameSite": "lax",
+            "secure": true,
+            "session": false,
+            "storeId": "0",
+            "value": "eyJpdiI6InRGdzNlUUFRdnRham9HVk5qeEUxQVE9PSIsInZhbHVlIjoiNkdzSXRkeHFvNDVYdXp2cWkzdHo4bEZlYmRRU2k1T0g1dXpqazE0MC9jb3UvK1cvUExPQThQVlppNzE2djM5dGRSVXlENDZTRms5cmI1bE5kK1RqS2c9PSIsIm1hYyI6Ijk5ZjI4YTJlNDBjYmU4YTViOTVhYjkxMjRiNWMxYjQ2YjdhNTAyMDQwYzExMjQ1MDFkNjAyYTY2MjcyYmMyNzciLCJ0YWciOiIifQ%3D%3D"
+        },
+        {
+            "domain": ".dapachecker.org",
+            "expirationDate": 1824211502.439,
+            "hostOnly": false,
+            "httpOnly": false,
+            "name": "_ga_H9JGTB3VTV",
+            "path": "/",
+            "sameSite": "unspecified",
+            "secure": false,
+            "session": false,
+            "storeId": "0",
+            "value": "GS2.1.s1789651260$o2$g1$t1789651502$j57$l0$h0"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1789658726.865185,
+            "hostOnly": true,
+            "httpOnly": false,
+            "name": "XSRF-TOKEN",
+            "path": "/",
+            "sameSite": "lax",
+            "secure": true,
+            "session": false,
+            "storeId": "0",
+            "value": "eyJpdiI6Imx5aS9MY2pDaTRpbFUyYXdrUTdXTGc9PSIsInZhbHVlIjoiRmZCMG5IVm9yMW8xbWhhOEQyU0RHdUtkNTZvaUNad1IzaWhEa0tVSElpTWJkM0VnQWVMUHRHRGZEWHlFR21TM0I1dUNzSGc4aWg5V2ZodW8yeUk4dHR6d1BNSnAyRUU5bUZoak9DT2gvOWl5V1Jlc2tOeTE1MEhIZVpCTFRJZHQiLCJtYWMiOiJhMzg4NDA5ZjgzZjBkOWU2YjJkM2JiYWQ0MDFmZGMwY2E1YTFjM2Y1ZTdlNzRjMjZhZjhjZmJmMmY3YjM5ZmU3IiwidGFnIjoiIn0%3D"
+        },
+        {
+            "domain": "www.dapachecker.org",
+            "expirationDate": 1789658726.865322,
+            "hostOnly": true,
+            "httpOnly": true,
+            "name": "dapacheckerorg_session",
+            "path": "/",
+            "sameSite": "lax",
+            "secure": true,
+            "session": false,
+            "storeId": "0",
+            "value": "eyJpdiI6IkZyeE40bTJtZ05XVDlqUG91c0pLVHc9PSIsInZhbHVlIjoiOW1mSFNMZmhaemkzY3BWQ05GVVNkbzB6ZCthZkY3M0NzcUZLZVhPdWJ5UE96YjJxWmxJVnRWcXBXQUtHR1h2VTFzWmoySDBNS0NKUEw5bFRVSmxudGk0MmZWbDdnLzF2eS9lNFpCMmFDWk1JYTRpNndKck0rVTdJa0dCbW9hMVIiLCJtYWMiOiI4NzZhNzc4YjFjNWUwMTJhNThkMWYyNGYxMTdkN2ZiMTNmMzEzMWM5ZTVhNWFmNzdmZDg5NDQwMWUyMzEwNjY4IiwidGFnIjoiIn0%3D"
+        }
+    ]
+}
