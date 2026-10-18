@@ -6,3 +6,5 @@ logs/
 storage/proofs/
 storage/bot.db
 .playwright-mcp/
+screenshots/
+cookies/

@@ -54,18 +54,21 @@ def _fmt_tanggal_wib(cached_at: str | None) -> str:
 def format_welcome(username: str) -> str:
     name = f"@{username}" if username else "kamu"
     return (
-        "🔎 <b>wkwkwkseo</b>\n"
+        "🔎 <b>wkwkwkseo</b> — SEO Domain Checker\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━\n"
         "\n"
         f"👋 Halo, <b>{name}</b>!\n"
         "\n"
-        "Cek metrik domain SEO lengkap\n"
-        "hanya dalam <b>satu kali kirim</b>.\n"
-        "\n"
-        "  <b>DA · PA · SS · DR · BC · RD · Age</b>\n"
+        "Cek metrik domain SEO lengkap:\n"
+        "<b>DA · PA · SS · DR · BC · RD · Age</b>\n"
         "\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        "🎁 Kamu dapat <b>5 kredit gratis</b>!\n"
+        "🚧 <b>Bot ini masih dalam tahap uji coba</b>\n"
+        "<i>Fitur dan layanan terus dikembangkan.</i>\n"
+        "\n"
+        "🎁 Kamu dapat <b>5 kredit gratis</b> untuk mencoba!\n"
+        "🗓️ <b>Login setiap hari</b> → dapat <b>+5 kredit gratis</b>\n"
+        "\n"
         "Kirim domain sekarang → <code>google.com</code>"
     )
 

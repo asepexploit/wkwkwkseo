@@ -19,9 +19,20 @@ async def topup_handler(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "💳 <b>Top Up Kredit</b>\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━\n"
         "\n"
-        "Pilih paket kredit di bawah ini:"
+        "🚧 <b>Sistem pembelian kredit sedang dalam pengembangan.</b>\n"
+        "\n"
+        "Bot ini saat ini masih dalam tahap <b>uji coba</b>.\n"
+        "Pembelian paket belum dibuka untuk umum.\n"
+        "\n"
+        "Jika kamu tertarik menggunakan layanan ini,\n"
+        "hubungi admin — kamu akan mendapat akses lebih awal\n"
+        "saat sistem resmi diluncurkan.\n"
+        "\n"
+        "━━━━━━━━━━━━━━━━━━━━━━━━\n"
+        "🗓️ Sementara ini, login setiap hari untuk\n"
+        "mendapatkan <b>+5 kredit gratis</b> per hari."
     )
-    await update.message.reply_text(msg, parse_mode="HTML", reply_markup=topup_keyboard())
+    await update.message.reply_text(msg, parse_mode="HTML")
 
 
 async def topup_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
@@ -31,18 +42,17 @@ async def topup_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if paket_key not in PAKET:
         return
 
-    tg_id = query.from_user.id
-    _pending_topup[tg_id] = paket_key
     paket = PAKET[paket_key]
-
     msg = (
-        f"💳 <b>Top Up — {paket['label']}</b>\n"
+        f"📦 <b>Paket {paket['label']}</b>\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━\n"
         "\n"
-        "Transfer ke rekening berikut:\n"
-        f"<pre>{REKENING}</pre>\n"
-        "Setelah transfer, kirim <b>foto bukti</b>\n"
-        "pembayaran ke sini."
+        "🚧 <b>Pembelian belum dibuka.</b>\n"
+        "\n"
+        "Bot masih dalam tahap uji coba.\n"
+        "Paket ini akan tersedia saat sistem resmi diluncurkan.\n"
+        "\n"
+        "Hubungi admin jika kamu ingin mendapat akses lebih awal."
     )
     await query.edit_message_text(msg, parse_mode="HTML")
 

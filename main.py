@@ -29,6 +29,23 @@ def main():
         app.bot_data["queue_manager"] = queue_manager
         from app.services.log_service import init_log_bot
         init_log_bot(app.bot)
+        # Scheduler daily reset kredit setiap 24 jam
+        import asyncio as _asyncio
+        from app.services.credit_service import run_daily_reset
+        async def _daily_loop():
+            from datetime import datetime, timedelta, timezone
+            while True:
+                # Hitung detik sampai 00:00 WIB berikutnya
+                wib = timezone(timedelta(hours=7))
+                now = datetime.now(wib)
+                besok = (now + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+                sisa = (besok - now).total_seconds()
+                await _asyncio.sleep(sisa)
+                try:
+                    await run_daily_reset(app.bot)
+                except Exception as e:
+                    logger.error(f"[daily] error: {e}")
+        _asyncio.create_task(_daily_loop())
 
     request = HTTPXRequest(connect_timeout=30, read_timeout=60, write_timeout=60, media_write_timeout=120)
     app = (

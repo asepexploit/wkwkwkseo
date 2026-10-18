@@ -1,5 +1,6 @@
 import aiosqlite
 import os
+from pathlib import Path
 from app.utils.constants import DB_PATH
 
 _db: aiosqlite.Connection | None = None
@@ -8,6 +9,7 @@ _db: aiosqlite.Connection | None = None
 async def get_db() -> aiosqlite.Connection:
     global _db
     if _db is None:
+        Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
         _db = await aiosqlite.connect(DB_PATH)
         _db.row_factory = aiosqlite.Row
     return _db
