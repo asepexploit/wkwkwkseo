@@ -61,6 +61,8 @@ async def topup_callback(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 
 async def proof_handler(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
+    if not update.effective_user:
+        return
     tg_id = update.effective_user.id
     paket_key = _pending_topup.get(tg_id)
     if not paket_key:
